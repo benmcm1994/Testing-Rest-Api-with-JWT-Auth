@@ -36,4 +36,14 @@
         {
             return [];
         }
+
+        public function signals()
+        {
+            return $this->hasMany(Signal::class);
+        }
+
+        public function accounts()
+        {
+            return $this->hasMany(Account::class);
+        }
     }
